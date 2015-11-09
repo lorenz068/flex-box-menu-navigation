@@ -1,0 +1,106 @@
+
+<html>
+<head>
+    <style>
+        .MenuFlex {
+            /* Layouts
+             * display in a row 
+             */
+            display: flex;
+
+            /* Branding */
+            padding: 0;
+            list-style: none;
+        }
+        .MenuFlex__element {
+            /* Layouts
+             * Element have always the same width regardless the parent width
+             */
+            flex: 1 1 100%;
+        }
+        .MenuFlex__link {
+            /* Layouts
+             * Vertical Align text
+             */
+            display: flex;
+            align-items: center;
+            
+            /* Branding */
+            height: 70px; /* we need to have an hardcoded value for height */
+            padding: 0 5px;
+            color: #EEE;
+            text-decoration: none;
+            border-left: 1px solid #555;
+            background: linear-gradient(#555, #333); 
+        }
+        .MenuFlex__element:first-of-type .MenuFlex__link {
+            /* Branding 
+            *  Remove the first border left
+             */
+            border-left: none;
+        }
+        .MenuFlex__link:focus,
+        .MenuFlex__link:hover {
+            /* Branding */
+            color: #111;
+            background: linear-gradient(#FFF, #CCC);
+        }
+        .MenuFlex__text {
+            /* Layouts
+             * Horizontal align text
+             */
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="MenuFlex">
+        <li class="MenuFlex__element">
+            <a class="MenuFlex__link" href="#">
+                <p class="MenuFlex__text">d fsfsd f</p>
+            </a>
+        </li>
+        <li class="MenuFlex__element">
+            <a class="MenuFlex__link" href="#">
+                <p class="MenuFlex__text">orem ipsum dolor</p>
+            </a>
+        </li>
+        <li class="MenuFlex__element">
+            <a class="MenuFlex__link" href="#">
+                <p class="MenuFlex__text">d fsfsd f</p>
+            </a>
+        </li>
+        <li class="MenuFlex__element">
+            <a class="MenuFlex__link" href="#">
+                <p class="MenuFlex__text">orem ipsum dolor</p>
+            </a>
+        </li>
+        <li class="MenuFlex__element">
+            <a class="MenuFlex__link" href="#">
+                <p class="MenuFlex__text">it amet, consectetur</p>
+            </a>
+        </li>
+        <li class="MenuFlex__element">
+            <a class="MenuFlex__link" href="#">
+                <p class="MenuFlex__text">dipisicing elit</p>
+            </a>
+        </li>
+        <li class="MenuFlex__element">
+            <a class="MenuFlex__link" href="#">
+                <p class="MenuFlex__text">dipisicing </p>
+            </a>
+        </li>
+        <li class="MenuFlex__element">
+            <a class="MenuFlex__link" href="#">
+                <p class="MenuFlex__text">lit. </p>
+            </a>
+        </li>
+        <li class="MenuFlex__element">
+            <a class="MenuFlex__link" href="#">
+                <p class="MenuFlex__text">ste totam!</p>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
